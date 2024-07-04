@@ -103,45 +103,143 @@
         <!-- banner section end -->
     </header>
     <main>
-        <!-- chart section start -->
-         <section>
-            <div class="p-4 grid grid-cols-1 lg:grid-cols-4 gap-4">
-                <aside class="lg:col-span-1 p-4 bg-white rounded-lg shadow">
-                    <nav class="space-y-2">
-                        <a href="#" class="block text-gray-700 hover:text-blue-600">The Index</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600">The Index Tab Two</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600">The Index Tab Three</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600">The Index Tab Four</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600">The Index Tab Five</a>
-                    </nav>
-                </aside>
-                <section class="lg:col-span-3 p-4 bg-white rounded-lg shadow">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-                        <h1 class="text-2xl font-bold text-gray-800 col-span-1 lg:col-span-2">The WPPOOL Index</h1>
-                        <div class="flex justify-between items-center col-span-1 lg:col-span-2">
-                            <div class="text-center">
-                                <p class="text-red-500 text-xl font-bold">+66.2%</p>
-                                <p class="text-gray-600">WPPOOL Index</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="text-blue-500 text-xl font-bold">+26.6%</p>
-                                <p class="text-gray-600">Google Index</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="text-green-500 text-xl font-bold">+34.1%</p>
-                                <p class="text-gray-600">Microsoft</p>
-                            </div>
-                            <div class="text-center">
-                                <p class="text-purple-500 text-xl font-bold">+17%</p>
-                                <p class="text-gray-600">Twitter Index</p>
-                            </div>
+        <!-- charts -->
+        <section class="p-4 grid grid-cols-1 lg:grid-cols-4 gap-4">
+            <!-- sidebar start -->
+            <aside class="lg:col-span-1 p-4 bg-white rounded-lg shadow">
+                <nav class="space-y-2">
+                    <button class="accordion-btn flex justify-between items-center w-full text-left text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">
+                        The Index
+                        <span class="icon flex items-center">
+                            <svg class="w-4 h-4 text-gray-700 plus-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-700 minus-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="accordion-content hidden space-y-2 pl-4">
+                        <a href="#" class="block text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">The Index</a>
+                        <a href="#" class="block text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">The Index</a>
+                        <a href="#" class="block text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">The Index</a>
+                    </div>
+                    <button class="accordion-btn flex justify-between items-center w-full text-left text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">
+                        The Index Tab Two
+                        <span class="icon flex items-center">
+                            <svg class="w-4 h-4 text-gray-700 plus-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-700 minus-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="accordion-btn flex justify-between items-center w-full text-left text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">
+                        The Index Tab Three
+                        <span class="icon flex items-center">
+                            <svg class="w-4 h-4 text-gray-700 plus-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-700 minus-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="accordion-btn flex justify-between items-center w-full text-left text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">
+                        The Index Tab Four
+                        <span class="icon flex items-center">
+                            <svg class="w-4 h-4 text-gray-700 plus-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-700 minus-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button class="accordion-btn flex justify-between items-center w-full text-left text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">
+                        The Index Tab Five
+                        <span class="icon flex items-center">
+                            <svg class="w-4 h-4 text-gray-700 plus-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-700 minus-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="accordion-content hidden space-y-2 pl-4">
+                        <a href="#" class="block text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">The Index</a>
+                        <a href="#" class="block text-gray-700 hover:text-white rounded-lg hover:shadow-xl hover:bg-[#2042B6] p-1">The Index Tab</a>
+                    </div>
+                </nav>
+            </aside>
+            <!-- sidebar end -->
+            <section class="lg:col-span-3 p-4 bg-white rounded-lg shadow">
+                <!-- chart title -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+                   <div class="flex gap-2">
+                    <img src="./images/stick.png" alt="">
+                    <h1 class="text-3xl poppins-500 text-gray-800 col-span-1 lg:col-span-2">The WPPOOL Index</h1>
+                   </div>
+                    <div class="flex justify-between items-center col-span-1 lg:col-span-2">
+                        <div class="text-center flex justify-between gap-2 p-4 rounded-lg bg-[#F3F3F3]">
+                            <p class="text-red-500 text-xl font-bold">+66.2%</p>
+                            <p class="text-gray-600">WPPOOL Index</p>
+                            <img src="./images/orange_bar.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-blue-500 text-xl font-bold">+26.6%</p>
+                            <p class="text-gray-600">Google Index</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-green-500 text-xl font-bold">+34.1%</p>
+                            <p class="text-gray-600">Microsoft</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-purple-500 text-xl font-bold">+17%</p>
+                            <p class="text-gray-600">Twitter Index</p>
                         </div>
                     </div>
-                    <canvas id="wpPoolChart"></canvas>
-                </section>
-            </div>
- </section>
-        
+                </div>
+
+                <div class="flex  space-x-4 mb-4">
+                    <!-- Dropdown Buttons -->
+                    <div class="relative">
+                        <button id="sectorsButton" class="bg-[#2042B6] text-white px-4 py-2 rounded-full focus:outline-none">
+                            Sectors <span>&#9660;</span>
+                        </button>
+                        <div id="sectorsMenu" class="hidden absolute mt-2 w-40 bg-white border border-gray-300 rounded-md shadow-lg z-10">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sector 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sector 2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sector 3</a>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <button id="ipoButton" class="bg-[#2042B6] text-white px-4 py-2 rounded-full focus:outline-none">
+                            Types of IPO <span>&#9660;</span>
+                        </button>
+                        <div id="ipoMenu" class="hidden absolute mt-2 w-40 bg-white border border-gray-300 rounded-md shadow-lg z-10">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">IPO Type 1</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">IPO Type 2</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">IPO Type 3</a>
+                        </div>
+
+                    </div>
+                    <!-- Time Range Selector -->
+                    <div class="flex right-4 absolute bg-[#EFF3F6] rounded-full space-x-2">
+                        <button id="timeButton1Y" class="text-gray-700 px-4 py-2 rounded-full focus:outline-none">1Y</button>
+                        <button id="timeButtonYTD" class="text-gray-700 px-4 py-2 rounded-full focus:outline-none">YTD</button>
+                        <button id="timeButton6M" class="bg-[#2042B6] text-white px-4 py-2 rounded-full focus:outline-none">6M</button>
+                        <button id="timeButton1M" class="text-gray-700 px-4 py-2 rounded-full focus:outline-none">1M</button>
+                        <button id="timeButton1W" class="text-gray-700 px-4 py-2 rounded-full focus:outline-none">1W</button>
+                    </div>
+                </div>
+
+                <canvas id="wpPoolChart"></canvas>
+            </section>
+        </section>
     </main>
     <footer>
 

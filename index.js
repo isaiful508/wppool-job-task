@@ -18,6 +18,40 @@ document.getElementById('closeButton').addEventListener('click', function () {
 });
 
 
+  // Toggle dropdown menus
+  document.getElementById('sectorsButton').addEventListener('click', function () {
+    document.getElementById('sectorsMenu').classList.toggle('hidden');
+});
+
+
+document.getElementById('ipoButton').addEventListener('click', function () {
+    document.getElementById('ipoMenu').classList.toggle('hidden');
+});
+
+
+ // Toggle accordion content and icons
+ document.querySelectorAll('.accordion-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const content = button.nextElementSibling;
+        content.classList.toggle('hidden');
+        const icon = button.querySelector('.icon');
+        icon.querySelector('.plus-icon').classList.toggle('hidden');
+        icon.querySelector('.minus-icon').classList.toggle('hidden');
+    });
+});
+
+// Toggle time range buttons
+document.querySelectorAll('[id^="timeButton"]').forEach(button => {
+    button.addEventListener('click', function () {
+        document.querySelectorAll('[id^="timeButton"]').forEach(btn => {
+            btn.classList.remove('bg-blue-600', 'text-white');
+            btn.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        button.classList.add('bg-blue-600', 'text-white');
+        button.classList.remove('bg-gray-200', 'text-gray-700');
+    });
+});
+
 // chart
 const ctx = document.getElementById('wpPoolChart').getContext('2d');
         const wpPoolChart = new Chart(ctx, {
@@ -88,3 +122,5 @@ const ctx = document.getElementById('wpPoolChart').getContext('2d');
                 }
             }
         });
+
+        // accordian function
