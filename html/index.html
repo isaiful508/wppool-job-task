@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wppool</title>
+    <!-- tailwind config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <!-- navbar start -->
+        <nav class=" w-full fixed z-10 backdrop-blur-md py-2">
+            <div class=" container mx-auto flex justify-between items-center">
+                <img src="/images/logo-withText.png" alt="">
+                <div class="relative flex gap-4">
+                    <!-- share icon -->
+                    <svg class="text-white w-10 h-10 border rounded-full p-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                      </svg>
+                      
+                    <button class="border-2 rounded-full text-white p-2">Download the 2024 Report</button>
+                    <button id="menuButton" class="text-white focus:outline-none">
+                        <svg class="w-8 h-8 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <button id="closeButton" class="hidden text-white focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <div id="mobileMenu"
+                        class="hidden absolute right-0 mt-8 w-48 bg-white text-black border border-gray-700 rounded-md shadow-lg z-10">
+                        <a href="#" class="block px-4 py-2  hover:bg-gray-700 ">The WPPOOL
+                            Index</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-white">All
+                            Companies</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-white">Potential
+                            Future Listings</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-white">State of
+                            USA</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-white">Stories &
+                            Ideas</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-white">About
+                            WPPOOL</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-white">WPPOOL
+                            Portfolio Companies</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-white">Visit
+                            WPPOOL</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- banner start here -->
+        <section class="bg-[#2042b6] p-20 w-full relative">
+            <!-- banner title and bg-img -->
+            <div class="flex justify-center items-center">
+                <div class="banner flex flex-col justify-center items-center text-white">
+                    <h2 class="text-6xl poppins-400">The WPPOOL Index</h2>
+                     <p class="poppins-400 text-[#CDCDCD">Monitor the performance of emerging, publicly traded, financial technology companies</p>
+                 </div>
+           </div>
+            <!-- side title -->
+            <div class="space-y-5 absolute bottom-20">
+                <div>
+                    <h2 class="text-4xl text-white poppins-400">60</h2>
+                <p class="text-[#CDCDCD] poppins-400">Companies</p>
+                </div>
+                <div>
+                    <h2 class="text-4xl text-white poppins-400">$100B</h2>
+                <p class="text-[#CDCDCD] poppins-400">Market cap</p>
+                </div>
+                <div>
+                    <h2 class="text-4xl text-white poppins-400">3.5x</h2>
+                <p class="text-[#CDCDCD] poppins-400">Revenue multiple</p>
+                </div>
+                <div>
+                    <h2 class="text-4xl text-white poppins-400">60%</h2>
+                <p class="text-[#CDCDCD] poppins-400">LTM avg. revenue growth rate</p>
+                </div>
+            </div>
+            <!-- arrro icon -->
+           
+            <svg class="text-[#2042B6] bg-white border rounded-full w-10 h-10 p-2 absolute right-10 bottom-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+              </svg>
+           
+        </section>
+        <!-- banner section end -->
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>
