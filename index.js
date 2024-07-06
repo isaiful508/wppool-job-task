@@ -18,8 +18,8 @@ document.getElementById('closeButton').addEventListener('click', function () {
 });
 
 
-  // Toggle dropdown menus
-  document.getElementById('sectorsButton').addEventListener('click', function () {
+// Toggle dropdown menus
+document.getElementById('sectorsButton').addEventListener('click', function () {
     document.getElementById('sectorsMenu').classList.toggle('hidden');
 });
 
@@ -29,8 +29,8 @@ document.getElementById('ipoButton').addEventListener('click', function () {
 });
 
 
- // Toggle accordion content and icons
- document.querySelectorAll('.accordion-btn').forEach(button => {
+// Toggle accordion content and icons
+document.querySelectorAll('.accordion-btn').forEach(button => {
     button.addEventListener('click', function () {
         const content = button.nextElementSibling;
         content.classList.toggle('hidden');
@@ -54,73 +54,131 @@ document.querySelectorAll('[id^="timeButton"]').forEach(button => {
 
 // chart
 const ctx = document.getElementById('wpPoolChart').getContext('2d');
-        const wpPoolChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-                datasets: [
-                    {
-                        label: 'WPPOOL',
-                        data: [0, 20, 40, 60, 80, 100, 120],
-                        borderColor: 'rgb(255, 99, 132)',
-                        borderWidth: 2,
-                        fill: false
-                    },
-                    {
-                        label: 'Google',
-                        data: [0, 10, 30, 50, 70, 90, 110],
-                        borderColor: 'rgb(54, 162, 235)',
-                        borderWidth: 2,
-                        fill: false
-                    },
-                    {
-                        label: 'Microsoft',
-                        data: [0, 15, 35, 55, 75, 95, 115],
-                        borderColor: 'rgb(75, 192, 192)',
-                        borderWidth: 2,
-                        fill: false
-                    },
-                    {
-                        label: 'Twitter',
-                        data: [0, 5, 25, 45, 65, 85, 105],
-                        borderColor: 'rgb(153, 102, 255)',
-                        borderWidth: 2,
-                        fill: false
-                    }
-                ]
+const wpPoolChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        datasets: [
+            {
+                label: 'WPPOOL',
+                data: [20, 80, 30, 20, 60, 80, 120],
+                borderColor: 'rgb(255, 99, 132)',
+                borderWidth: 2,
+                fill: false
             },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                    },
-                    tooltip: {
-                        mode: 'index',
-                        intersect: false,
-                    }
-                },
-                hover: {
-                    mode: 'nearest',
-                    intersect: true
-                },
-                scales: {
-                    x: {
-                        display: true,
-                        title: {
-                            display: true,
-                            text: 'Month'
-                        }
-                    },
-                    y: {
-                        display: true,
-                        title: {
-                            display: true,
-                            text: 'Value'
-                        }
-                    }
+            {
+                label: 'Google',
+                data: [10, 15, 45, 20, 60, 70, 95],
+                borderColor: 'rgb(54, 162, 235)',
+                borderWidth: 2,
+                fill: false
+            },
+            {
+                label: 'Microsoft',
+                data: [10, 25, 10, 110, 40, 50, 90],
+                borderColor: 'rgb(75, 192, 192)',
+                borderWidth: 2,
+                fill: false
+            },
+            {
+                label: 'Twitter',
+                data: [55, 40, 20, 44, 60, 85, 75],
+                borderColor: 'rgb(153, 102, 255)',
+                borderWidth: 2,
+                fill: false
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+            },
+            tooltip: {
+                mode: 'index',
+                intersect: false,
+            }
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Month'
                 }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Value'
+                }
+            }
+        }
+    }
+});
+
+// table search function
+
+document.getElementById('searchInput').addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const tableRows = document.querySelectorAll('#tableBody tr');
+
+    tableRows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        let matchFound = false;
+
+        cells.forEach(cell => {
+            if (cell.textContent.toLowerCase().includes(searchValue)) {
+                matchFound = true;
             }
         });
 
-        // accordian function
+        if (matchFound) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+
+// slider code 
+const slider = document.getElementById('slider');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const page1Button = document.getElementById('page1');
+const page2Button = document.getElementById('page2');
+
+prevButton.addEventListener('click', () => {
+    slider.scrollBy({
+        left: -slider.clientWidth,
+        behavior: 'smooth'
+    });
+});
+
+nextButton.addEventListener('click', () => {
+    slider.scrollBy({
+        left: slider.clientWidth,
+        behavior: 'smooth'
+    });
+});
+
+page1Button.addEventListener('click', () => {
+    slider.scrollTo({
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
+page2Button.addEventListener('click', () => {
+    slider.scrollTo({
+        left: slider.clientWidth,
+        behavior: 'smooth'
+    });
+});
+

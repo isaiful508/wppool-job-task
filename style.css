@@ -46,3 +46,11 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.slider2 {
+  background-image: url(./images/sliderbg.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
