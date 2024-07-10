@@ -17,7 +17,7 @@
 <body class="bg-[#e9e9e9]">
     <header>
         <!-- navbar start -->
-        <nav class=" w-full fixed z-10 backdrop-blur-md py-2">
+        <nav class=" lg:w-full fixed z-10 backdrop-blur-xl py-2">
             <div class=" container mx-auto flex justify-between items-center">
                 <img src="./images/logo-withText.png" alt="">
                 <div class="relative flex gap-4">
@@ -28,7 +28,7 @@
                             d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
                     </svg>
 
-                    <button class="border-2 rounded-full text-white p-2">Download the 2024 Report</button>
+                    <button class="border-2 hidden lg:flex md:flex rounded-full text-white p-2">Download the 2024 Report</button>
                     <button id="menuButton" class="text-white focus:outline-none">
                         <svg class="w-8 h-8 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@
         <!-- navbar end -->
 
         <!-- banner start here -->
-        <section class="bg-[#2042b6] p-20 w-full relative">
+        <section class="bg-[#2042b6]  lg:p-20 w-full relative">
             <!-- banner title and bg-img -->
             <div class="flex justify-center items-center">
                 <div class="banner flex flex-col justify-center items-center text-white">
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <!-- side title -->
-            <div class="space-y-5 absolute bottom-20">
+            <div class="space-y-5 lg:absolute bottom-20">
                 <div>
                     <h2 class="text-4xl text-white poppins-400">60</h2>
                     <p class="text-[#CDCDCD] poppins-400">Companies</p>
@@ -222,7 +222,7 @@
                         <img src="./images/stick.png" alt="">
                         <h1 class="text-3xl poppins-500 text-gray-800 col-span-1 lg:col-span-2">The WPPOOL Index</h1>
                     </div>
-                    <div class="flex justify-between items-center col-span-1 lg:col-span-2">
+                    <div class="flex lg:flex-row flex-col gap-4 justify-between items-center col-span-1 lg:col-span-2">
                         <div class="text-center flex justify-between gap-2 p-4 rounded-lg bg-[#F3F3F3]">
                             <p class="text-red-500 text-xl font-bold">+66.2%</p>
                             <p class="text-gray-600">WPPOOL Index</p>
@@ -275,7 +275,7 @@
 
                     </div>
                     <!-- Time Range Selector -->
-                    <div class="flex right-4 absolute bg-[#EFF3F6] rounded-full space-x-2">
+                    <div class="flex right-4  absolute bg-[#EFF3F6] rounded-full space-x-2">
                         <button id="timeButton1Y"
                             class="text-gray-700 px-4 py-2 rounded-full focus:outline-none">1Y</button>
                         <button id="timeButtonYTD"
@@ -289,7 +289,9 @@
                     </div>
                 </div>
                 <!-- charts -->
-                <canvas id="wpPoolChart"></canvas>
+                <div class="relative w-full">
+                    <canvas id="wpPoolChart"></canvas>
+                </div>
 
             </section>
         </section>
@@ -302,7 +304,7 @@
                 <div class="p-4 flex justify-between">
                     <h1 class="text-3xl mt-4 poppins-400 ">All Companies</h1>
 
-                    <input type="text" id="searchInput" class="p-4 border-2 rounded-lg w-2/5 bg-[#e9e9e9]"
+                    <input type="text" id="searchInput" class="lg:p-4 border-2 rounded-lg  w-2/5 bg-[#e9e9e9]"
                         placeholder="Search Companies">
 
 
@@ -470,35 +472,35 @@
                 <h2 class="text-4xl">Potential Future Listings</h2>
                 <p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
             </div>
-            <div class="mt-[26px] grid grid-cols-1 lg:grid-cols-5 space-y-3">
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+            <div class="mt-[26px]  grid grid-cols-2 lg:grid-cols-5 space-x-3 space-y-3">
+                <div class="bg-white lg:lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f1.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f2.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f3.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f4.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f5.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f6.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f7.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f8.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f9.png" alt="">
                 </div>
-                <div class="bg-white w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
                     <img src="./images/f10.png" alt="">
                 </div>
             </div>
@@ -507,30 +509,29 @@
         <section class="mt-16 container mx-auto p-4">
             <div>
                 <h1 class="text-3xl poppins-500 mb-4">State of USA</h1>
-                <div class=" mb-4">
+                <div class="mb-4">
                     <button class="bg-[#2042B6] text-white px-3 py-2 rounded-full">
                         2024
                     </button>
                     <p class="text-black mt-2">Click through the slides or download the report to view natively on your
                         device.</p>
                 </div>
-
+        
                 <div class="relative">
-                    <div id="slider" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory">
-                        <div class="snap-start  flex-shrink-0">
+                    <div id="slider" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar">
+                        <div class="snap-start flex-shrink-0">
                             <img src="./images/slider1.png" class=" " alt="Slide 1">
                         </div>
                         <div class="snap-start slider2 flex-shrink-0">
                             <img src="./images/slider2.png" alt="Slide 2">
                         </div>
-                        <div class="snap-start  flex-shrink-0">
+                        <div class="snap-start flex-shrink-0">
                             <img src="./images/slider3.png" alt="Slide 3">
                         </div>
                     </div>
                     <div class="absolute bottom-[18px] transform -translate-y-1/2 left-20 shadow-xl">
-                        <button id="prev" class="bg-white text-gray-600 p-2 rounded-full shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
+                        <button id="prev" class="bg-white text-[#2042B6] p-2 rounded-full shadow-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
                                     d="M15 10a1 1 0 01-1 1H6.414l3.293 3.293a1 1 0 11-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L6.414 9H14a1 1 0 011 1z"
                                     clip-rule="evenodd" />
@@ -538,9 +539,8 @@
                         </button>
                     </div>
                     <div class="absolute bottom-[18px] transform -translate-y-1/2 left-6 shadow-xl">
-                        <button id="next" class="bg-white text-gray-600 p-2 rounded-full shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                fill="currentColor">
+                        <button id="next" class="bg-white text-[#2042B6] p-2 rounded-full shadow-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
                                     d="M5 10a1 1 0 011-1h7.586l-3.293-3.293a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 11H6a1 1 0 01-1-1z"
                                     clip-rule="evenodd" />
@@ -548,23 +548,217 @@
                         </button>
                     </div>
                 </div>
-
+        
                 <div class="mt-4 poppins-400 flex items-center justify-start space-x-2">
                     <h1>Pages</h1>
-                    <button class="bg-white shadow-xl text-gray-600 p-2 rounded-full " id="page1">1</button>
-                    <button class="bg-white text-gray-600 p-2 rounded-full shadow-xl" id="page2">2</button>
+                    <button class="bg-white shadow-xl text-[#2042B6] p-2 rounded-full" id="page1">1</button>
+                    <button class="bg-white text-[#2042B6] p-2 rounded-full shadow-xl" id="page2">2</button>
                 </div>
                 <div class="mt-2 flex justify-end">
                     <button class="bg-[#2042B6] text-white rounded-full px-3 p-2">Download the 2023 Report</button>
                 </div>
+            </div>
         </section>
         <!-- story section -->
-         <section>
-            
+         <section class="mt-16 container mx-auto">
+            <div class="poppins-400">
+                <h2 class="text-4xl">Stories & Ideas</h2>
+                <p>The latest news and updates</p>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 poppins-400">
+                <div class="bg-white  w-full relative rounded-lg p-4">
+                    <div class="-mt-12">
+                        <img src="./images/man1.png" alt="" class="w-24 h-24 rounded-lg mb-2">
+                        <p class="text-sm text-[#2042B6]">By: Sahabuddin Sagor</p>
+                        <p class="mt-2 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+                        <button class="bg-[#2042B6] text-white px-4 py-2 mt-2 rounded-full">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white  w-full relative rounded-lg p-4">
+                    <div class="-mt-12">
+                        <img src="./images/man2.png" alt="" class="w-24 h-24 rounded-lg mb-2">
+                        <p class="text-sm text-[#2042B6]">By: Nayem Khan</p>
+                        <p class="mt-2 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+                        <button class="bg-[#2042B6] text-white px-4 py-2 mt-2 rounded-full">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white w-full relative rounded-lg p-4">
+                    <div class="-mt-12">
+                        <img src="./images/man1.png" alt="" class="w-24 h-24 rounded-lg mb-2">
+                        <p class="text-sm text-[#2042B6]">By: Shagor Sahabuddin</p>
+                        <p class="mt-2 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+                        <button class="bg-[#2042B6] text-white px-4 py-2 mt-2 rounded-full">Read More</button>
+                    </div>
+                </div>
+               
+                <div class="bg-white mt-10 w-full relative rounded-lg p-4">
+                    <div class="-mt-12">
+                        <img src="./images/man2.png" alt="" class="w-24 h-24 rounded-lg mb-2">
+                        <p class="text-sm text-[#2042B6]">By: Sahabuddin Sagor</p>
+                        <p class="mt-2 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+                        <button class="bg-[#2042B6] text-white px-4 py-2 mt-2 rounded-full">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white mt-10 w-full relative rounded-lg p-4">
+                    <div class="-mt-12">
+                        <img src="./images/man1.png" alt="" class="w-24 h-24 rounded-lg mb-2">
+                        <p class="text-sm text-[#2042B6]">By: Nayem Khan</p>
+                        <p class="mb-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+                        <button class="bg-[#2042B6] text-white px-4 py-2 mt-2 rounded-full">Read More</button>
+                    </div>
+                </div>
+                <div class="bg-white mt-10 w-full relative rounded-lg p-4">
+                    <div class="-mt-12">
+                        <img src="./images/man2.png" alt="" class="w-24 h-24 rounded-lg mb-2">
+                        <p class="text-sm text-[#2042B6]">By: Shagor Sahabuddin</p>
+                        <p class="text-center text-[#2042B6]mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+                        <button class="bg-[#2042B6] text-white px-4 py-2 mt-2 rounded-full">Read More</button>
+                    </div>
+                </div>
+            </div>
          </section>
+         <!-- about section -->
+          <div class="mt-8">
+           
+          </div>
+          <section class="mt-[181px] container mx-auto flex lg:flex-row flex-col-reverse bg-white justify-between items-center rounded-lg">
+            <div class="lg:p-[78px]  p-10">
+                <h1 class="text-4xl poppins-500">About WPPOOL</h1>
+                <h3 class="text-2xl poppins-500">Investing in wppool for over 50 years</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.</p>
+                <div class="mt-6">
+                    <button class="bg-[#2042B6] text-white rounded-full px-3 p-2">Contact WPPOOL</button>
+                </div>
+            </div>
+           
+                <img src="./images/about_image.png" alt="">
+           
+          </section>
+          <!-- protfolio companies-->
+           <section class="container mx-auto mt-[227px]">
+            <div>
+                <h1 class="text-[48px] poppins-400">Selected WPPOOL Portfolio Companies</h1>
+            </div>
+            <div class="grid mt-[48px] lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-5">
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p1.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p2.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p3.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p4.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p5.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p6.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p7.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p8.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p8.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p9.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p10.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p11.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p12.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p13.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p14.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p15.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p16.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p17.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p18.png" alt="">
+                </div>
+                <div class="bg-white lg:w-[220px] h-[120px] flex justify-center items-center rounded-lg">
+                    <img src="./images/p19.png" alt="">
+                </div>
+            </div>
+           </section>
+           <!-- footer section -->
+           
     </main>
-    <footer>
+    <footer class="mt-[58px] lg:py-[77px] py-[40px] px-[70px] lg:px-[93px] bg-[#E6E6E6]">
+        <div class="grid lg:grid-cols-5 gap-5">
+            <div class="poppins-400 col-span-2">
+                <h4 class="text-3xl">Experience remarkable 
+                    WordPress products with a 
+                    new level of power, beauty, 
+                    and human-centered designs.</h4>
+                    <div class="mt-[250px]">
+                        <p class="text-[#9FA0A2]">©2024    Terms of Use    Privacy Policy</p>
+                        <h4 class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaera </h4>
+                    </div>
 
+            </div>
+            <div class="poppins-400 ml-4">
+                <h4 class="text-[#9FA0A2] poppins-700">Jum to</h4>
+               <div class="mt-[16] space-y-4">
+                <p class="text-[#115CD9]">About Us</p>
+                <p class="text-[#115CD9]">Portfolio</p>
+                <p class="text-[#115CD9]">News</p>
+                <p class="text-[#115CD9]">Stories</p>
+                <p class="text-[#115CD9]">Jobs</p>
+                <p class="text-[#115CD9]">About Us</p>
+               </div>
+            </div>
+            <div class="col-span-2 space-y-[87px]">
+                <div class="space-y-2">
+                    <h2 class="poppins-700">Cambridge</h2>
+                    <p class="poppins-400">70728 Yost Burg, <br>
+                        North Magdaleneview, <br> 
+                        UT 97952-2814</p>
+                        
+                </div>
+               
+                <div class="space-y-2">
+                    <h2 class="poppins-700">London</h2>
+                    <p class="poppins-400">Suite 292 903 Stehr Streets, <br>
+                        Langworthtown,
+                         SC 94577-9465</p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="poppins-700">San Francisco</h2>
+                    <p class="poppins-400">19837 Gilberto Lodge, <br>
+                        Lake Kendallville, <br>
+                        Colorado - 97392, <br>
+                         Bhutan</p>
+                </div>
+                <div class="flex gap-10 items-center">
+                    <div>
+                        <img src="./images/linkedin.png" alt="">
+                    </div>
+                    <div><img src="./images/twitter.png" alt=""></div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="./index.js"></script>
 </body>

@@ -39,7 +39,7 @@
 }
 
 .banner {
-  background-image: url(./images/banner-bg.png);
+  background-image: url(./images/bg_banner.svg);
   height: 600px;
   object-fit: cover;
   background-size: cover;
@@ -53,4 +53,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Custom class to hide scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
